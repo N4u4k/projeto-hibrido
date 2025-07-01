@@ -168,7 +168,7 @@ object-fit: cover;
     /* border: 1px solid red; */
     flex: 45%;
     margin-right: 5px;
-    margin-bottom:  5px;
+    margin-bottom:  20px;
 }
 
 .img-container{
@@ -198,4 +198,24 @@ object-fit: cover;
 
 .mdi-star{
     color: orange;
+}
+
+.bold{
+    font-weight: 800;
+}
+
+.price{
+    font-size: 20px;
+}
+
+@media (min-width:992px) {
+    .item-card{
+        flex: 30%;
+    }
+}
+
+@media (min-width:1200px) {
+    .item-card{
+        flex: 20%;
+    }
 }
