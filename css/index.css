@@ -185,3 +185,17 @@ object-fit: cover;
     max-width: 150px;
     object-fit: cover;
 }
+
+.nome-rating{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.color-gray{
+    color: gray;
+}
+
+.mdi-star{
+    color: orange;
+}
