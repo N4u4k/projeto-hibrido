@@ -167,8 +167,8 @@ object-fit: cover;
     height: 240px;
     /* border: 1px solid red; */
     flex: 45%;
-    margin-right: 5px;
-    margin-bottom:  20px;
+    margin-right: 10px;
+    margin-bottom:  15px;
 }
 
 .img-container{
@@ -216,6 +216,6 @@ object-fit: cover;
 
 @media (min-width:1200px) {
     .item-card{
-        flex: 20%;
+        flex: 17%;
     }
 }
