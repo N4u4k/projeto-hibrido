@@ -29,34 +29,41 @@
         <!-- Your main view, should have "view-main" class -->
         <div class="view view-main">
 
-            <!-- TAB BAR-->
-            <div class="toolbar toolbar-bottom">
-                <div class="toolbar-inner display-flex">
-                    <a href="/index/" class="tab-link link active">
-                        <i class="ri-home-4-fill"></i>
-                        <span>Home</span>
-                    </a>
-                    <a href="/link2/" class="tab-link link">
-                        <i class="ri-search-2-line"data-count="0"></i>
-                        <span>Busca</span>
-                    </a>
-                    <a href="/link3/" class="tab-link link">
-                        <i class="btn-cart" data-count="5"><i class="ri-shopping-cart-2-fill"></i></i>
-                        <span>Carrinho</span>
-                    </a>
-                    <a href="/link4/" class="tab-link link">
-                        <i class="mdi mdi-account"></i>
-                        <span>Perfil</span>
-                    </a>
-
-                </div>
-            </div>
-
+           
             <!-- Initial Page, "data-name" contains page name -->
             <div data-name="detalhes" class="page color-theme-blue">
-               
+                 <!-- TAB BAR(Barra de baixo) -->
+                <div class="toolbar toolbar-bottom">
+                    <div class="toolbar-inner display-flex">
+                       <div>R$1000</div>
+                       <div>
+                         <button>Adicionar Carinho</button>
+                       </div>
+                    </div>
+                </div>
+
                 <div class="page-content">
-                <a href="/index/">Voltar</a>
+                    <div class="prod-detail">
+                        <div class="butons-top">
+                            <a href="/index/"><i class="ri-arrow-left-wide-line"></i></a>
+                            <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+                            <a href="#"><i class="ri-share-2-line"></i></a>
+                        </div>
+                        <img src="img/default.png">
+                    </div>
+                    <div class="prod-content">
+                        <div class="block">
+                            <div class="line padding-top">
+                                <b>Nome do produtor</b>
+                                <button class="promo-btn">Promção</button>
+                            </div>
+                            <div class="display-flex align-items-center justify-content-start">
+                                <button class="btn-rates"><i class="mdi mdi-star">4.5</i></button>
+                                <button class="btn-rates"><i class="ri-thumb-up-fill">98%</i></button>
+                                <span>102 reviews</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
