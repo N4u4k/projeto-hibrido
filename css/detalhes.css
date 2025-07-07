@@ -86,8 +86,58 @@
     background: none;
     margin-right: 5px;
     width: 80px;
+    font-size: 16px;
 }
 
 .ri-thumb-up-fill{
     color: var(--verde);
+}
+.color-gray{
+    color: gray;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,td{
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+th{
+    background: #ddd;
+}
+
+.flex-40{
+    flex: 40%;
+}
+
+.flex-60{
+    flex: 60%;
+}
+
+.riscado{
+    text-decoration: line-through;
+}
+
+.princing{
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.add-cart{
+    width: 90%;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--verde);
+    color: var(--branco);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 800;
 }
