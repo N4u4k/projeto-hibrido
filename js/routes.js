@@ -31,7 +31,7 @@ var app = new Framework7({
 		},
 		pageInit: function (event, page) {
 		// fazer algo quando a página for inicializada
-      // app.views.main.router.navigate('/detalhes/');
+      app.views.main.router.navigate('/carrinho/');
 
     $.getScript("js/index.js");
     
@@ -155,21 +155,41 @@ var app = new Framework7({
       url: 'detalhes.html',
       animate: false,
       on: {
-      pageBeforeIn: function (event, page) {
-      // fazer algo antes da página ser exibida
-      $("#menuprincipal").hide("fast");
-      },
-      pageAfterIn: function (event, page) {
-      // fazer algo depois da página ser exibida
-      },
-      pageInit: function (event, page) {
-      // fazer algo quando a página for inicializada
-      },
-      pageBeforeRemove: function (event, page) {
-      // fazer algo antes da página ser removida do DOM
-      },
+        pageBeforeIn: function (event, page) {
+        // fazer algo antes da página ser exibida
+        $("#menuprincipal").hide("fast");
+        },
+        pageAfterIn: function (event, page) {
+        // fazer algo depois da página ser exibida
+        },
+        pageInit: function (event, page) {
+        // fazer algo quando a página for inicializada
+        },
+        pageBeforeRemove: function (event, page) {
+        // fazer algo antes da página ser removida do DOM
+        },
+        }
+    },
+    {
+      path: '/carrinho/',
+      url: 'carrinho.html',
+      animate: false,
+      on: {
+        pageBeforeIn: function (event, page) {
+          // fazer algo antes da página ser exibida
+          $("#menuprincipal").hide("fast");
+        },
+        pageAfterIn: function (event, page) {
+        // fazer algo depois da página ser exibida
+        },
+        pageInit: function (event, page) {
+        // fazer algo quando a página for inicializada
+        },
+        pageBeforeRemove: function (event, page) {
+        // fazer algo antes da página ser removida do DOM
+        },
       }
-      },
+    },
   ],
   // ... other parameters
 });

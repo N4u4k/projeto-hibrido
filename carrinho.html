@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for stat<i class="ri-home-5-fill"></i>usbar (Android only) -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>Template Tab</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="lib/framework7-bundle.min.css">
+    <!-- CSS PERSONALIZADO PARA MENU-->
+    <link rel="stylesheet" href="css/index.css">
+    <!--Ícones Material Design-->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <!--Ícones do Remix Icon-->
+    <link rel="stylesheet" href="css/remixicon/remixicon.css">
+
+</head>
+
+<body>
+    <!-- App root element -->
+    <div id="app">
+
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+
+           
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="detalhes" class="page color-theme-blue">
+                
+                <!-- NAV BAR (Barra do topo)  -->
+                <div class="nav-top-cart">
+                    <a href="/index/"><i class="ri-arrow-left-wide-line"></i></a>
+                    <strong><i class="ri-shopping-cart-2-fill"> Carrinho</i></strong>
+                    <a href="#"><i class="ri-more-line"></i></a>
+                </div> 
+                
+                <!-- TAB BAR(Barra de baixo) -->
+                <div class="toolbar toolbar-bottom">
+                    <div class="toolbar-inner display-flex align-items-center justify-content-center">
+                       <div class="flex-40 text-align-center">
+                            <span class="riscado color-gray">R$1800</span>
+                            <h3 class="princing no-padding no-margin">R$1000</h3>
+                        </div>
+                       <div class="flex-60">
+                         <button class="add-cart">Adicionar Carinho</button>
+                       </div>
+                    </div>
+                </div>
+                <!-- CONTEUDO DA PÁGINA -->
+                <div class="page-content">
+                    <div id="cart-list">
+                        <!-- ITENS DO CARINHO -->
+                        <div class="item-carrinho">
+                             <div class="area-img">
+                                <img src="img/default.png"> 
+                             </div>
+                             <div class="area-datalhes">
+                                <div class="sup">
+                                    <span>  Xbox Serie X</span>
+                                    <a href="#">
+                                        <i class="ri-delete-bin-2-fill"></i>
+                                    </a>
+
+                                </div>
+                                <div class="meio"></div>
+                                <div class="inf-preco"></div> 
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="lib/framework7-bundle.min.js"></script>
+	<!-- jQuery -->
+	<script type="text/javascript" src="lib/jquery-3.7.0.min.js"></script>	
+    <!-- Roteamento do app-->
+    <script type="text/javascript" src="js/routes.js"></script>
+    <script src="cordova.js"></script>
+</body>
+
+</html>
